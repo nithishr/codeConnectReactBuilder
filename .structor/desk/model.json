@@ -1,0 +1,1206 @@
+{
+  "pages": [
+    {
+      "pageName": "HomePage",
+      "pagePath": "/home",
+      "children": [
+        {
+          "type": "NavBar"
+        },
+        {
+          "variantName": "default",
+          "type": "PageHeader",
+          "props": {
+            "style": {
+              "fontFamily": "awesome",
+              "textAlign": "center"
+            }
+          },
+          "children": [
+            {
+              "type": "span",
+              "props": {
+                "style": {
+                  "fontSize": "90px"
+                }
+              },
+              "children": [],
+              "text": "Code Connect"
+            }
+          ]
+        },
+        {
+          "variantName": "row with 4 cols",
+          "type": "Grid",
+          "props": {
+            "fluid": true
+          },
+          "children": [
+            {
+              "type": "Row",
+              "children": [
+                {
+                  "type": "Input"
+                },
+                {
+                  "type": "Col",
+                  "props": {
+                    "xs": 5,
+                    "md": 5,
+                    "sm": 5,
+                    "lg": 5
+                  },
+                  "children": [
+                    {
+                      "type": "IndexLink",
+                      "props": {
+                        "to": "/contributor"
+                      },
+                      "children": [
+                        {
+                          "type": "Button",
+                          "props": {
+                            "bsStyle": "success",
+                            "style": {
+                              "textAlign": "center",
+                              "cssFloat": "right",
+                              "paddingLeft": "6%",
+                              "paddingRight": "%"
+                            },
+                            "bsSize": "large"
+                          },
+                          "children": [
+                            {
+                              "type": "span",
+                              "text": "browse projects",
+                              "props": {},
+                              "componentName": null
+                            }
+                          ],
+                          "componentName": null
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Col",
+                  "props": {
+                    "xs": 2,
+                    "md": 2,
+                    "sm": 2,
+                    "lg": 2,
+                    "style": {}
+                  },
+                  "children": [
+                    {
+                      "variantName": "circle",
+                      "type": "Image",
+                      "props": {
+                        "src": "https://raw.githubusercontent.com/Gott50/Code-Connect/master/uibuilder/src/client/assets/CClogo.png",
+                        "rounded": false,
+                        "circle": false,
+                        "thumbnail": false,
+                        "style": {
+                          "maxHeight": "200px",
+                          "cssFloat": "center"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "Col",
+                  "props": {
+                    "xs": 5,
+                    "md": 5,
+                    "sm": 5,
+                    "lg": 5
+                  },
+                  "children": [
+                    {
+                      "type": "IndexLink",
+                      "props": {
+                        "to": "/mentor"
+                      },
+                      "children": [
+                        {
+                          "type": "Button",
+                          "props": {
+                            "bsStyle": "warning",
+                            "style": {
+                              "textAlign": "center",
+                              "paddingRight": "10%",
+                              "paddingLeft": "10%"
+                            },
+                            "block": false,
+                            "bsSize": "large",
+                            "disabled": false
+                          },
+                          "children": [
+                            {
+                              "type": "span",
+                              "text": "      add project",
+                              "props": {},
+                              "componentName": null
+                            }
+                          ],
+                          "componentName": null
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "props": {
+                "style": {}
+              }
+            }
+          ]
+        },
+        {
+          "type": "h3",
+          "props": {
+            "style": {
+              "padding": "1em",
+              "textAlign": "center"
+            }
+          },
+          "children": [
+            {
+              "type": "span",
+              "text": "newest projects",
+              "props": {}
+            }
+          ]
+        },
+        {
+          "type": "DynamicList",
+          "props": {
+            "projectList": [
+              {
+                "id": "12",
+                "title": "Thunder",
+                "link": "http//:link.web",
+                "deskription": "A random Project of the OpenSource",
+                "tasks": [
+                  {
+                    "id": "10",
+                    "name": "add Link"
+                  },
+                  {
+                    "id": "12",
+                    "name": "add Link2"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "pageName": "Contributor",
+      "pagePath": "/contributor",
+      "children": [
+        {
+          "type": "NavBar"
+        },
+        {
+          "variantName": "default",
+          "type": "PageHeader",
+          "props": {
+            "style": {
+              "textAlign": "center"
+            }
+          },
+          "children": [
+            {
+              "type": "span",
+              "props": {
+                "style": {}
+              },
+              "children": [],
+              "text": "Select your Project"
+            }
+          ]
+        },
+        {
+          "type": "ListGroup",
+          "props": {},
+          "children": [
+            {
+              "variantName": "2 colums",
+              "type": "Grid",
+              "props": {
+                "fluid": true
+              },
+              "children": [
+                {
+                  "type": "Row",
+                  "children": [
+                    {
+                      "type": "Col",
+                      "props": {
+                        "xs": 2,
+                        "md": 2,
+                        "sm": 2,
+                        "lg": 2
+                      },
+                      "children": [
+                        {
+                          "type": "SearchFilter",
+                          "props": {}
+                        }
+                      ]
+                    },
+                    {
+                      "type": "Col",
+                      "props": {
+                        "xs": 12,
+                        "md": 6,
+                        "sm": 12,
+                        "lg": 6
+                      },
+                      "children": [
+                        {
+                          "type": "Panel",
+                          "props": {},
+                          "children": [
+                            {
+                              "type": "p",
+                              "children": [
+                                {
+                                  "type": "span",
+                                  "text": "Empty Panel",
+                                  "props": {}
+                                }
+                              ],
+                              "props": {}
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "props": {}
+                }
+              ]
+            },
+            {
+              "type": "SearchFilter",
+              "props": {
+                "filter": [
+                  {
+                    "title": "Language",
+                    "options": [
+                      "JavaScript",
+                      "HTML",
+                      "CSS"
+                    ]
+                  },
+                  {
+                    "title": "Difficulty",
+                    "options": [
+                      "Beginner",
+                      "Intermediate",
+                      "Advanced"
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "type": "ListGroupItem",
+              "props": {
+                "href": "/opentasks"
+              },
+              "children": [
+                {
+                  "type": "table",
+                  "children": [
+                    {
+                      "type": "thead",
+                      "children": [
+                        {
+                          "type": "tr",
+                          "children": [
+                            {
+                              "type": "th",
+                              "children": [
+                                {
+                                  "type": "h3",
+                                  "children": [
+                                    {
+                                      "type": "span",
+                                      "text": "Project X"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "th",
+                              "children": []
+                            },
+                            {
+                              "type": "th",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "tbody",
+                      "children": [
+                        {
+                          "type": "tr",
+                          "children": [
+                            {
+                              "type": "td",
+                              "children": [
+                                {
+                                  "type": "Link",
+                                  "props": {
+                                    "to": "/main"
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "span",
+                                      "text": "www.x.project"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "td",
+                              "children": [
+                                {
+                                  "type": "span",
+                                  "text": "50 Tasks"
+                                },
+                                {
+                                  "type": "span",
+                                  "text": "20 Contributors",
+                                  "props": {
+                                    "style": {
+                                      "cssFloat": "right"
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "tr",
+                          "children": [
+                            {
+                              "type": "td",
+                              "children": [
+                                {
+                                  "type": "i",
+                                  "props": {
+                                    "className": "fa fa-star"
+                                  }
+                                },
+                                {
+                                  "type": "i",
+                                  "props": {
+                                    "className": "fa fa-star"
+                                  }
+                                },
+                                {
+                                  "type": "i",
+                                  "props": {
+                                    "className": "fa fa-star"
+                                  }
+                                },
+                                {
+                                  "type": "i",
+                                  "props": {
+                                    "className": "fa fa-star"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "type": "td",
+                              "children": [
+                                {
+                                  "type": "span",
+                                  "text": "An awesome Project about X"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "componentName": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pageName": "YourProject",
+      "pagePath": "/yourproject",
+      "children": [
+        {
+          "type": "NavBar"
+        },
+        {
+          "variantName": "default",
+          "type": "PageHeader",
+          "props": {
+            "style": {
+              "textAlign": "center"
+            }
+          },
+          "children": [
+            {
+              "type": "span",
+              "props": {
+                "style": {}
+              },
+              "children": [],
+              "text": "Open Tasks"
+            }
+          ]
+        },
+        {
+          "type": "ListGroup",
+          "props": {},
+          "children": [
+            {
+              "type": "ListGroupItem",
+              "props": {
+                "href": "#"
+              },
+              "children": [
+                {
+                  "type": "table",
+                  "children": [
+                    {
+                      "type": "thead",
+                      "children": [
+                        {
+                          "type": "tr",
+                          "children": [
+                            {
+                              "type": "th",
+                              "children": [
+                                {
+                                  "type": "h3",
+                                  "children": [
+                                    {
+                                      "type": "span",
+                                      "text": "add a Search Bar"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "th",
+                              "children": [
+                                {
+                                  "type": "span",
+                                  "text": ""
+                                }
+                              ]
+                            },
+                            {
+                              "type": "th",
+                              "children": [
+                                {
+                                  "type": "span",
+                                  "text": ""
+                                }
+                              ]
+                            },
+                            {
+                              "type": "th",
+                              "children": [
+                                {
+                                  "type": "Button",
+                                  "props": {
+                                    "bsStyle": "info"
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "span",
+                                      "text": "select",
+                                      "props": {},
+                                      "componentName": null
+                                    }
+                                  ],
+                                  "componentName": null
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "tbody",
+                      "children": [
+                        {
+                          "type": "tr",
+                          "children": [
+                            {
+                              "type": "td",
+                              "children": [
+                                {
+                                  "type": "span",
+                                  "text": "Search for files on The Website"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "td",
+                              "children": [
+                                {
+                                  "type": "span",
+                                  "text": ""
+                                }
+                              ]
+                            },
+                            {
+                              "type": "td",
+                              "children": [
+                                {
+                                  "type": "span",
+                                  "text": ""
+                                }
+                              ]
+                            },
+                            {
+                              "type": "td",
+                              "children": [
+                                {
+                                  "type": "span",
+                                  "text": ""
+                                }
+                              ]
+                            },
+                            {
+                              "type": "td",
+                              "children": [
+                                {
+                                  "type": "span",
+                                  "text": ""
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "tr",
+                          "children": [
+                            {
+                              "type": "td",
+                              "children": [
+                                {
+                                  "type": "span",
+                                  "text": ""
+                                }
+                              ]
+                            },
+                            {
+                              "type": "td",
+                              "children": [
+                                {
+                                  "type": "span",
+                                  "text": ""
+                                }
+                              ]
+                            },
+                            {
+                              "type": "td",
+                              "children": [
+                                {
+                                  "type": "span",
+                                  "text": ""
+                                }
+                              ]
+                            },
+                            {
+                              "type": "td",
+                              "children": [
+                                {
+                                  "type": "span",
+                                  "text": ""
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "componentName": null
+            },
+            {
+              "type": "ListGroupItem",
+              "props": {
+                "href": "#"
+              },
+              "children": [
+                {
+                  "type": "table",
+                  "children": [
+                    {
+                      "type": "thead",
+                      "children": [
+                        {
+                          "type": "tr",
+                          "children": [
+                            {
+                              "type": "th",
+                              "children": [
+                                {
+                                  "type": "h3",
+                                  "children": [
+                                    {
+                                      "type": "span",
+                                      "text": "add contact Form"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "th",
+                              "children": [
+                                {
+                                  "type": "span",
+                                  "text": ""
+                                }
+                              ]
+                            },
+                            {
+                              "type": "th",
+                              "children": [
+                                {
+                                  "type": "span",
+                                  "text": ""
+                                }
+                              ]
+                            },
+                            {
+                              "type": "th",
+                              "children": [
+                                {
+                                  "type": "Button",
+                                  "props": {
+                                    "bsStyle": "info"
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "span",
+                                      "text": "select",
+                                      "props": {},
+                                      "componentName": null
+                                    }
+                                  ],
+                                  "componentName": null
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "tbody",
+                      "children": [
+                        {
+                          "type": "tr",
+                          "children": [
+                            {
+                              "type": "td",
+                              "children": [
+                                {
+                                  "type": "span",
+                                  "text": "Contact Form to get in touch with the owner of the Website"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "td",
+                              "children": [
+                                {
+                                  "type": "span",
+                                  "text": ""
+                                }
+                              ]
+                            },
+                            {
+                              "type": "td",
+                              "children": [
+                                {
+                                  "type": "span",
+                                  "text": ""
+                                }
+                              ]
+                            },
+                            {
+                              "type": "td",
+                              "children": [
+                                {
+                                  "type": "span",
+                                  "text": ""
+                                }
+                              ]
+                            },
+                            {
+                              "type": "td",
+                              "children": [
+                                {
+                                  "type": "span",
+                                  "text": ""
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "tr",
+                          "children": [
+                            {
+                              "type": "td",
+                              "children": [
+                                {
+                                  "type": "span",
+                                  "text": ""
+                                }
+                              ]
+                            },
+                            {
+                              "type": "td",
+                              "children": [
+                                {
+                                  "type": "span",
+                                  "text": ""
+                                }
+                              ]
+                            },
+                            {
+                              "type": "td",
+                              "children": [
+                                {
+                                  "type": "span",
+                                  "text": ""
+                                }
+                              ]
+                            },
+                            {
+                              "type": "td",
+                              "children": [
+                                {
+                                  "type": "span",
+                                  "text": ""
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "componentName": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pageName": "YourTasks",
+      "pagePath": "/yourtasks",
+      "children": [
+        {
+          "type": "NavBar"
+        },
+        {
+          "variantName": "default",
+          "type": "PageHeader",
+          "props": {
+            "style": {
+              "textAlign": "center"
+            }
+          },
+          "children": [
+            {
+              "type": "span",
+              "props": {
+                "style": {}
+              },
+              "children": [],
+              "text": "Your Tasks"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "children": [
+            {
+              "type": "thead",
+              "children": [
+                {
+                  "type": "tr",
+                  "children": [
+                    {
+                      "type": "th",
+                      "children": [
+                        {
+                          "type": "h3",
+                          "children": [
+                            {
+                              "type": "span",
+                              "text": "Project X:"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "th",
+                      "children": [
+                        {
+                          "type": "h4",
+                          "children": [
+                            {
+                              "type": "span",
+                              "text": "Add a Search Bar"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "th",
+                      "children": [
+                        {
+                          "type": "span",
+                          "text": ""
+                        }
+                      ]
+                    },
+                    {
+                      "type": "th",
+                      "children": [
+                        {
+                          "variantName": "prev-next align",
+                          "type": "Pager",
+                          "props": {},
+                          "children": [
+                            {
+                              "type": "PageItem",
+                              "props": {
+                                "href": "#",
+                                "previous": true
+                              },
+                              "children": [
+                                {
+                                  "type": "span",
+                                  "props": {},
+                                  "children": [],
+                                  "text": "Previous"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "PageItem",
+                              "props": {
+                                "href": "#",
+                                "next": true
+                              },
+                              "children": [
+                                {
+                                  "type": "span",
+                                  "props": {},
+                                  "children": [],
+                                  "text": "Next"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "tbody",
+              "children": [
+                {
+                  "type": "tr",
+                  "children": [
+                    {
+                      "type": "td",
+                      "children": [
+                        {
+                          "type": "span",
+                          "text": ""
+                        }
+                      ]
+                    },
+                    {
+                      "type": "td",
+                      "children": [
+                        {
+                          "type": "span",
+                          "text": ""
+                        }
+                      ]
+                    },
+                    {
+                      "type": "td",
+                      "children": [
+                        {
+                          "type": "span",
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "tr",
+                  "children": [
+                    {
+                      "type": "td",
+                      "children": [
+                        {
+                          "type": "span",
+                          "text": ""
+                        }
+                      ]
+                    },
+                    {
+                      "type": "td",
+                      "children": [
+                        {
+                          "type": "Input",
+                          "props": {
+                            "type": "select",
+                            "hasFeedback": true,
+                            "placeholder": "Enter value",
+                            "label": "Status",
+                            "help": "Help for input"
+                          },
+                          "children": [
+                            {
+                              "type": "option",
+                              "props": {},
+                              "children": [],
+                              "text": "in Progress"
+                            },
+                            {
+                              "type": "option",
+                              "props": {},
+                              "children": [],
+                              "text": "Done"
+                            },
+                            {
+                              "type": "option",
+                              "props": {},
+                              "children": [],
+                              "text": "Partial"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "td",
+                      "children": [
+                        {
+                          "type": "span",
+                          "text": ""
+                        }
+                      ]
+                    },
+                    {
+                      "type": "td",
+                      "children": [
+                        {
+                          "type": "span",
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "tr",
+                  "children": [
+                    {
+                      "type": "td",
+                      "children": [
+                        {
+                          "type": "span",
+                          "text": ""
+                        }
+                      ]
+                    },
+                    {
+                      "type": "td",
+                      "children": [
+                        {
+                          "type": "span",
+                          "text": ""
+                        }
+                      ]
+                    },
+                    {
+                      "type": "td",
+                      "children": [
+                        {
+                          "type": "span",
+                          "text": ""
+                        }
+                      ]
+                    },
+                    {
+                      "type": "td",
+                      "children": [
+                        {
+                          "type": "Button",
+                          "props": {
+                            "bsStyle": "success"
+                          },
+                          "children": [
+                            {
+                              "type": "span",
+                              "text": "Submit",
+                              "props": {},
+                              "componentName": null
+                            }
+                          ],
+                          "componentName": null
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "h4",
+          "children": [
+            {
+              "type": "span",
+              "text": "Rate your Mentor"
+            }
+          ]
+        },
+        {
+          "variantName": "default",
+          "type": "Pagination",
+          "props": {
+            "bsSize": "medium",
+            "items": 10,
+            "activePage": 3,
+            "prev": false,
+            "next": false,
+            "first": false,
+            "last": false,
+            "ellipsis": false,
+            "maxButtons": 10
+          }
+        },
+        {
+          "type": "Button",
+          "props": {
+            "bsStyle": "success"
+          },
+          "children": [
+            {
+              "type": "span",
+              "text": "Submit",
+              "props": {},
+              "componentName": null
+            }
+          ],
+          "componentName": null
+        },
+        {
+          "type": "TestPanel",
+          "props": {}
+        }
+      ]
+    },
+    {
+      "pageName": "MentorLandingPage",
+      "pagePath": "/mentor",
+      "children": [
+        {
+          "type": "NavBar"
+        },
+        {
+          "variantName": "default",
+          "type": "PageHeader",
+          "props": {
+            "style": {
+              "textAlign": "center"
+            }
+          },
+          "children": [
+            {
+              "type": "small",
+              "props": {},
+              "children": [],
+              "text": "Let us know if you want to"
+            },
+            {
+              "variantName": "default",
+              "type": "PageHeader",
+              "props": {
+                "style": {}
+              },
+              "children": [
+                {
+                  "type": "span",
+                  "props": {
+                    "style": {}
+                  },
+                  "children": [],
+                  "text": "Mentor"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Input",
+          "props": {
+            "type": "text",
+            "hasFeedback": true,
+            "bsStyle": "success",
+            "placeholder": "your.e@mail.adress",
+            "label": "your E-Mail adress",
+            "help": "Please enter a valid E-Mail adress"
+          },
+          "children": []
+        }
+      ]
+    }
+  ]
+}
