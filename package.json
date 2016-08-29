@@ -6,9 +6,9 @@
   "scripts": {
     "test": "test",
     "build": "webpack --config ./build-conf/webpack.config.js --progress --colors",
-    "build-dev": "webpack --config ./build-conf/webpack-dev.config.js --progress --colors --watch"
+    "build-dev": "webpack --config ./build-conf/webpack-dev.config.js --progress --colors --watch",
 
- 	 "start": "node server.js"
+ 	 "start": "node server.js"	
 	},
   "dependencies": {
     "express": "4.13.4",
