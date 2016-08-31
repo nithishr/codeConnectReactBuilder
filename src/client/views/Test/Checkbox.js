@@ -12,7 +12,7 @@ class SearchFilter extends Component {
   }
   handleChange(option) {
     console.log(option);
-//<Button block onClick={this.handleClick(option)}>{option} </Button>
+
   }
 
     makeListGroupItems(filter) {
@@ -20,8 +20,9 @@ class SearchFilter extends Component {
         if (filter.options && filter.options.length > 0)
             listGroupItems = filter.options.map((option, i) => {
                 return (
-                  <dev key={i} >
-                    <Input  onChange={this.handleChange(option) } type="checkbox" label={option}></Input>
+                  <dev>
+                    <Button block onClick={this.handleClick(option)}>{option} </Button>
+                    <Input key={i} onChange={this.handleChange(option) } type="checkbox" label={option}></Input>
                   </dev>
                         );
             })
@@ -34,8 +35,8 @@ class SearchFilter extends Component {
         if (this.props.filter && this.props.filter.length > 0) {
             panels = this.props.filter.map((filter,i) => {
                 return (
-                    <Panel key={i} collapsible defaultExpanded bsStyle="success" header={filter.title}>
-                        <ListGroup fill  style={{
+                    <Panel collapsible defaultExpanded bsStyle="success" header={filter.title}>
+                        <ListGroup fill key={i} style={{
                             "fontSize": "15px"
                         }}>
                             {this.makeListGroupItems(filter)}

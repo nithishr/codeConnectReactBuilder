@@ -8,6 +8,74 @@
           "type": "NavBar"
         },
         {
+          "variantName": "row with 4 cols",
+          "type": "Grid",
+          "props": {
+            "fluid": true
+          },
+          "children": [
+            {
+              "type": "Row",
+              "children": [
+                {
+                  "type": "Input"
+                },
+                {
+                  "type": "Col",
+                  "props": {
+                    "xs": 5,
+                    "md": 5,
+                    "sm": 5,
+                    "lg": 5
+                  },
+                  "children": []
+                },
+                {
+                  "type": "Col",
+                  "props": {
+                    "xs": 2,
+                    "md": 2,
+                    "sm": 2,
+                    "lg": 2,
+                    "style": {}
+                  },
+                  "children": [
+                    {
+                      "variantName": "circle",
+                      "type": "Image",
+                      "props": {
+                        "src": "https://raw.githubusercontent.com/Gott50/Code-Connect/master/uibuilder/src/client/assets/CClogo.png",
+                        "rounded": false,
+                        "circle": false,
+                        "thumbnail": false,
+                        "style": {
+                          "maxHeight": "300px",
+                          "cssFloat": "center"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "Col",
+                  "props": {
+                    "xs": 5,
+                    "md": 5,
+                    "sm": 5,
+                    "lg": 5
+                  },
+                  "children": []
+                }
+              ],
+              "props": {
+                "style": {
+                  "paddingTop": "100px"
+                }
+              }
+            }
+          ]
+        },
+        {
           "variantName": "default",
           "type": "PageHeader",
           "props": {
@@ -30,7 +98,7 @@
           ]
         },
         {
-          "variantName": "row with 4 cols",
+          "variantName": "2 colums",
           "type": "Grid",
           "props": {
             "fluid": true
@@ -40,15 +108,12 @@
               "type": "Row",
               "children": [
                 {
-                  "type": "Input"
-                },
-                {
                   "type": "Col",
                   "props": {
-                    "xs": 5,
-                    "md": 5,
-                    "sm": 5,
-                    "lg": 5
+                    "xs": 12,
+                    "md": 6,
+                    "sm": 12,
+                    "lg": 6
                   },
                   "children": [
                     {
@@ -65,14 +130,15 @@
                               "textAlign": "center",
                               "cssFloat": "right",
                               "paddingLeft": "6%",
-                              "paddingRight": "%"
+                              "paddingRight": "6%",
+                              "marginTop": "0px"
                             },
                             "bsSize": "large"
                           },
                           "children": [
                             {
                               "type": "span",
-                              "text": "browse projects",
+                              "text": "Browse Projects",
                               "props": {},
                               "componentName": null
                             }
@@ -86,36 +152,10 @@
                 {
                   "type": "Col",
                   "props": {
-                    "xs": 2,
-                    "md": 2,
-                    "sm": 2,
-                    "lg": 2,
-                    "style": {}
-                  },
-                  "children": [
-                    {
-                      "variantName": "circle",
-                      "type": "Image",
-                      "props": {
-                        "src": "https://raw.githubusercontent.com/Gott50/Code-Connect/master/uibuilder/src/client/assets/CClogo.png",
-                        "rounded": false,
-                        "circle": false,
-                        "thumbnail": false,
-                        "style": {
-                          "maxHeight": "200px",
-                          "cssFloat": "center"
-                        }
-                      }
-                    }
-                  ]
-                },
-                {
-                  "type": "Col",
-                  "props": {
-                    "xs": 5,
-                    "md": 5,
-                    "sm": 5,
-                    "lg": 5
+                    "xs": 12,
+                    "md": 6,
+                    "sm": 12,
+                    "lg": 6
                   },
                   "children": [
                     {
@@ -131,7 +171,8 @@
                             "style": {
                               "textAlign": "center",
                               "paddingRight": "10%",
-                              "paddingLeft": "10%"
+                              "paddingLeft": "10%",
+                              "marginTop": ""
                             },
                             "block": false,
                             "bsSize": "large",
@@ -140,7 +181,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "text": "      add project",
+                              "text": "Add Project",
                               "props": {},
                               "componentName": null
                             }
@@ -152,9 +193,7 @@
                   ]
                 }
               ],
-              "props": {
-                "style": {}
-              }
+              "props": {}
             }
           ]
         },
@@ -163,39 +202,594 @@
           "props": {
             "style": {
               "padding": "1em",
-              "textAlign": "center"
+              "textAlign": "center",
+              "paddingTop": "110px"
             }
           },
           "children": [
             {
               "type": "span",
-              "text": "newest projects",
+              "text": "Newest Projects",
               "props": {}
             }
           ]
         },
         {
-          "type": "DynamicList",
+          "variantName": "row with 4 cols",
+          "type": "Grid",
           "props": {
-            "projectList": [
-              {
-                "id": "12",
-                "title": "Thunder",
-                "link": "http//:link.web",
-                "deskription": "A random Project of the OpenSource",
-                "tasks": [
-                  {
-                    "id": "10",
-                    "name": "add Link"
+            "fluid": true
+          },
+          "children": [
+            {
+              "type": "Row",
+              "children": [
+                {
+                  "type": "Col",
+                  "props": {
+                    "xs": 4,
+                    "md": 4,
+                    "sm": 4,
+                    "lg": 4
                   },
-                  {
-                    "id": "12",
-                    "name": "add Link2"
-                  }
-                ]
-              }
-            ]
-          }
+                  "children": [
+                    {
+                      "type": "Panel",
+                      "props": {
+                        "header": {
+                          "type": "h3",
+                          "props": {},
+                          "children": [
+                            {
+                              "type": "span",
+                              "text": "Code Connect",
+                              "props": {}
+                            }
+                          ]
+                        },
+                        "bsStyle": "warning"
+                      },
+                      "children": [
+                        {
+                          "type": "span",
+                          "text": "The platform for coders to connect"
+                        },
+                        {
+                          "type": "Panel",
+                          "props": {
+                            "header": {
+                              "type": "h5",
+                              "props": {},
+                              "children": [
+                                {
+                                  "type": "span",
+                                  "text": "Tasks",
+                                  "props": {}
+                                }
+                              ]
+                            },
+                            "style": {
+                              "overflow": "auto"
+                            },
+                            "collapsible": true,
+                            "defaultExpanded": true,
+                            "bsStyle": "success"
+                          },
+                          "children": [
+                            {
+                              "type": "ListGroup",
+                              "props": {
+                                "fill": true
+                              },
+                              "children": [
+                                {
+                                  "type": "ListGroupItem",
+                                  "props": {
+                                    "href": "#",
+                                    "bsStyle": "",
+                                    "active": false,
+                                    "style": {
+                                      "minHeight": "50px"
+                                    }
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "Button",
+                                      "props": {
+                                        "bsStyle": "success",
+                                        "style": {
+                                          "cssFloat": "right"
+                                        },
+                                        "href": "https://github.com/nithishr/codeConnect"
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "span",
+                                          "text": "Default",
+                                          "props": {},
+                                          "componentName": null
+                                        }
+                                      ],
+                                      "componentName": null
+                                    },
+                                    {
+                                      "type": "span",
+                                      "text": "10: Search Functionality in Navigation Bar",
+                                      "props": {},
+                                      "componentName": null
+                                    }
+                                  ],
+                                  "componentName": null
+                                },
+                                {
+                                  "type": "ListGroupItem",
+                                  "props": {
+                                    "href": "#",
+                                    "bsStyle": "",
+                                    "active": false,
+                                    "style": {
+                                      "minHeight": "50px"
+                                    }
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "Button",
+                                      "props": {
+                                        "bsStyle": "success",
+                                        "style": {
+                                          "cssFloat": "right"
+                                        },
+                                        "href": "https://github.com/nithishr/codeConnect"
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "span",
+                                          "text": "Default",
+                                          "props": {},
+                                          "componentName": null
+                                        }
+                                      ],
+                                      "componentName": null
+                                    },
+                                    {
+                                      "type": "span",
+                                      "text": "12: Improve load times",
+                                      "props": {},
+                                      "componentName": null
+                                    }
+                                  ],
+                                  "componentName": null
+                                }
+                              ]
+                            }
+                          ],
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Col",
+                  "props": {
+                    "xs": 4,
+                    "md": 4,
+                    "sm": 4,
+                    "lg": 4
+                  },
+                  "children": [
+                    {
+                      "type": "Panel",
+                      "props": {
+                        "header": {
+                          "type": "h3",
+                          "props": {},
+                          "children": [
+                            {
+                              "type": "span",
+                              "text": "TowerDefense",
+                              "props": {}
+                            }
+                          ]
+                        },
+                        "bsStyle": "warning"
+                      },
+                      "children": [
+                        {
+                          "type": "span",
+                          "text": "The platform for coders to connect"
+                        },
+                        {
+                          "type": "Panel",
+                          "props": {
+                            "header": {
+                              "type": "h5",
+                              "props": {},
+                              "children": [
+                                {
+                                  "type": "span",
+                                  "text": "Tasks",
+                                  "props": {}
+                                }
+                              ]
+                            },
+                            "style": {
+                              "overflow": "auto"
+                            },
+                            "collapsible": true,
+                            "defaultExpanded": true,
+                            "bsStyle": "success"
+                          },
+                          "children": [
+                            {
+                              "type": "ListGroup",
+                              "props": {
+                                "fill": true
+                              },
+                              "children": [
+                                {
+                                  "type": "ListGroupItem",
+                                  "props": {
+                                    "href": "#",
+                                    "bsStyle": "",
+                                    "active": false,
+                                    "style": {
+                                      "minHeight": "50px"
+                                    }
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "Button",
+                                      "props": {
+                                        "bsStyle": "success",
+                                        "style": {
+                                          "cssFloat": "right"
+                                        },
+                                        "href": "https://github.com/gapsong/TowerDefense"
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "span",
+                                          "text": "Default",
+                                          "props": {},
+                                          "componentName": null
+                                        }
+                                      ],
+                                      "componentName": null
+                                    },
+                                    {
+                                      "type": "span",
+                                      "text": "11: Add Advertising",
+                                      "props": {},
+                                      "componentName": null
+                                    }
+                                  ],
+                                  "componentName": null
+                                },
+                                {
+                                  "type": "ListGroupItem",
+                                  "props": {
+                                    "href": "#",
+                                    "bsStyle": "",
+                                    "active": false,
+                                    "style": {
+                                      "minHeight": "50px"
+                                    }
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "Button",
+                                      "props": {
+                                        "bsStyle": "success",
+                                        "style": {
+                                          "cssFloat": "right"
+                                        },
+                                        "href": "https://github.com/gapsong/TowerDefense"
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "span",
+                                          "text": "Default",
+                                          "props": {},
+                                          "componentName": null
+                                        }
+                                      ],
+                                      "componentName": null
+                                    },
+                                    {
+                                      "type": "span",
+                                      "text": "13: Add MuteButton",
+                                      "props": {},
+                                      "componentName": null
+                                    }
+                                  ],
+                                  "componentName": null
+                                },
+                                {
+                                  "type": "ListGroupItem",
+                                  "props": {
+                                    "href": "#",
+                                    "bsStyle": "",
+                                    "active": false,
+                                    "style": {
+                                      "minHeight": "50px"
+                                    }
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "Button",
+                                      "props": {
+                                        "bsStyle": "success",
+                                        "style": {
+                                          "cssFloat": "right"
+                                        },
+                                        "href": "https://github.com/gapsong/TowerDefense"
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "span",
+                                          "text": "Default",
+                                          "props": {},
+                                          "componentName": null
+                                        }
+                                      ],
+                                      "componentName": null
+                                    },
+                                    {
+                                      "type": "span",
+                                      "text": "14: Redesign MainMenu",
+                                      "props": {},
+                                      "componentName": null
+                                    }
+                                  ],
+                                  "componentName": null
+                                },
+                                {
+                                  "type": "ListGroupItem",
+                                  "props": {
+                                    "href": "#",
+                                    "bsStyle": "",
+                                    "active": false,
+                                    "style": {
+                                      "minHeight": "50px"
+                                    }
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "Button",
+                                      "props": {
+                                        "bsStyle": "success",
+                                        "style": {
+                                          "cssFloat": "right"
+                                        },
+                                        "href": "https://github.com/gapsong/TowerDefense"
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "span",
+                                          "text": "Default",
+                                          "props": {},
+                                          "componentName": null
+                                        }
+                                      ],
+                                      "componentName": null
+                                    },
+                                    {
+                                      "type": "span",
+                                      "text": "16: Redesign Icon",
+                                      "props": {},
+                                      "componentName": null
+                                    }
+                                  ],
+                                  "componentName": null
+                                }
+                              ]
+                            }
+                          ],
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Col",
+                  "props": {
+                    "xs": 4,
+                    "md": 4,
+                    "sm": 4,
+                    "lg": 4
+                  },
+                  "children": [
+                    {
+                      "type": "Panel",
+                      "props": {
+                        "header": {
+                          "type": "h3",
+                          "props": {},
+                          "children": [
+                            {
+                              "type": "span",
+                              "text": "IceSlider",
+                              "props": {}
+                            }
+                          ]
+                        },
+                        "bsStyle": "warning"
+                      },
+                      "children": [
+                        {
+                          "type": "span",
+                          "text": "The platform for coders to connect"
+                        },
+                        {
+                          "type": "Panel",
+                          "props": {
+                            "header": {
+                              "type": "h5",
+                              "props": {},
+                              "children": [
+                                {
+                                  "type": "span",
+                                  "text": "Tasks",
+                                  "props": {}
+                                }
+                              ]
+                            },
+                            "style": {
+                              "overflow": "auto"
+                            },
+                            "collapsible": true,
+                            "defaultExpanded": true,
+                            "bsStyle": "success"
+                          },
+                          "children": [
+                            {
+                              "type": "ListGroup",
+                              "props": {
+                                "fill": true
+                              },
+                              "children": [
+                                {
+                                  "type": "ListGroupItem",
+                                  "props": {
+                                    "href": "#",
+                                    "bsStyle": "",
+                                    "active": false,
+                                    "style": {
+                                      "minHeight": "50px"
+                                    }
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "Button",
+                                      "props": {
+                                        "bsStyle": "success",
+                                        "style": {
+                                          "cssFloat": "right"
+                                        },
+                                        "href": "https://github.com/gapsong/TowerDefense"
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "span",
+                                          "text": "Default",
+                                          "props": {},
+                                          "componentName": null
+                                        }
+                                      ],
+                                      "componentName": null
+                                    },
+                                    {
+                                      "type": "span",
+                                      "text": "5: Redesign MainMenu",
+                                      "props": {},
+                                      "componentName": null
+                                    }
+                                  ],
+                                  "componentName": null
+                                },
+                                {
+                                  "type": "ListGroupItem",
+                                  "props": {
+                                    "href": "#",
+                                    "bsStyle": "",
+                                    "active": false,
+                                    "style": {
+                                      "minHeight": "50px"
+                                    }
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "Button",
+                                      "props": {
+                                        "bsStyle": "success",
+                                        "style": {
+                                          "cssFloat": "right"
+                                        },
+                                        "href": "https://github.com/gapsong/TowerDefense"
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "span",
+                                          "text": "Default",
+                                          "props": {},
+                                          "componentName": null
+                                        }
+                                      ],
+                                      "componentName": null
+                                    },
+                                    {
+                                      "type": "span",
+                                      "text": "9: Redesign Icon",
+                                      "props": {},
+                                      "componentName": null
+                                    }
+                                  ],
+                                  "componentName": null
+                                },
+                                {
+                                  "type": "ListGroupItem",
+                                  "props": {
+                                    "href": "#",
+                                    "bsStyle": "",
+                                    "active": false,
+                                    "style": {
+                                      "minHeight": "50px"
+                                    }
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "Button",
+                                      "props": {
+                                        "bsStyle": "success",
+                                        "style": {
+                                          "cssFloat": "right"
+                                        },
+                                        "href": "https://github.com/gapsong/TowerDefense"
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "span",
+                                          "text": "Default",
+                                          "props": {},
+                                          "componentName": null
+                                        }
+                                      ],
+                                      "componentName": null
+                                    },
+                                    {
+                                      "type": "span",
+                                      "text": "15: Add MuteButton",
+                                      "props": {},
+                                      "componentName": null
+                                    }
+                                  ],
+                                  "componentName": null
+                                }
+                              ]
+                            }
+                          ],
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Col",
+                  "props": {
+                    "xs": 3,
+                    "md": 3,
+                    "sm": 3,
+                    "lg": 3
+                  },
+                  "children": []
+                }
+              ],
+              "props": {}
+            }
+          ]
         }
       ]
     },
@@ -242,7 +836,7 @@
                     {
                       "type": "Col",
                       "props": {
-                        "xs": 2,
+                        "xs": 3,
                         "md": 2,
                         "sm": 2,
                         "lg": 2
@@ -250,33 +844,606 @@
                       "children": [
                         {
                           "type": "SearchFilter",
-                          "props": {}
+                          "props": {
+                            "filter": [
+                              {
+                                "title": "Platform",
+                                "options": [
+                                  "Web",
+                                  "Mobile",
+                                  "Desktop"
+                                ]
+                              },
+                              {
+                                "title": "Language",
+                                "options": [
+                                  "JavaScript",
+                                  "HTML",
+                                  "CSS",
+                                  "Java",
+                                  "Python",
+                                  "C",
+                                  "C++"
+                                ]
+                              },
+                              {
+                                "title": "Difficulty",
+                                "options": [
+                                  "Beginner",
+                                  "Intermediate",
+                                  "Advanced"
+                                ]
+                              }
+                            ],
+                            "style": {}
+                          }
                         }
                       ]
                     },
                     {
                       "type": "Col",
                       "props": {
-                        "xs": 12,
-                        "md": 6,
-                        "sm": 12,
-                        "lg": 6
+                        "xs": 6,
+                        "md": 10,
+                        "sm": 10,
+                        "lg": 10
                       },
                       "children": [
                         {
                           "type": "Panel",
-                          "props": {},
-                          "children": [
-                            {
-                              "type": "p",
+                          "props": {
+                            "header": {
+                              "type": "h3",
+                              "props": {},
                               "children": [
                                 {
                                   "type": "span",
-                                  "text": "Empty Panel",
+                                  "text": "Code Connect",
                                   "props": {}
                                 }
+                              ]
+                            },
+                            "bsStyle": "warning"
+                          },
+                          "children": [
+                            {
+                              "type": "span",
+                              "text": "The platform for coders to connect"
+                            },
+                            {
+                              "type": "Panel",
+                              "props": {
+                                "header": {
+                                  "type": "h5",
+                                  "props": {},
+                                  "children": [
+                                    {
+                                      "type": "span",
+                                      "text": "Tasks",
+                                      "props": {}
+                                    }
+                                  ]
+                                },
+                                "style": {
+                                  "overflow": "auto"
+                                },
+                                "collapsible": true,
+                                "defaultExpanded": false,
+                                "bsStyle": "success"
+                              },
+                              "children": [
+                                {
+                                  "type": "ListGroup",
+                                  "props": {
+                                    "fill": true
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "ListGroupItem",
+                                      "props": {
+                                        "href": "#",
+                                        "bsStyle": "",
+                                        "active": false,
+                                        "style": {
+                                          "minHeight": "50px"
+                                        }
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "Button",
+                                          "props": {
+                                            "bsStyle": "success",
+                                            "style": {
+                                              "cssFloat": "right"
+                                            },
+                                            "href": "https://github.com/nithishr/codeConnect"
+                                          },
+                                          "children": [
+                                            {
+                                              "type": "span",
+                                              "text": "Default",
+                                              "props": {},
+                                              "componentName": null
+                                            }
+                                          ],
+                                          "componentName": null
+                                        },
+                                        {
+                                          "type": "span",
+                                          "text": "10: Search Functionality in Navigation Bar",
+                                          "props": {},
+                                          "componentName": null
+                                        }
+                                      ],
+                                      "componentName": null
+                                    },
+                                    {
+                                      "type": "ListGroupItem",
+                                      "props": {
+                                        "href": "#",
+                                        "bsStyle": "",
+                                        "active": false,
+                                        "style": {
+                                          "minHeight": "50px"
+                                        }
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "Button",
+                                          "props": {
+                                            "bsStyle": "success",
+                                            "style": {
+                                              "cssFloat": "right"
+                                            },
+                                            "href": "https://github.com/nithishr/codeConnect"
+                                          },
+                                          "children": [
+                                            {
+                                              "type": "span",
+                                              "text": "Default",
+                                              "props": {},
+                                              "componentName": null
+                                            }
+                                          ],
+                                          "componentName": null
+                                        },
+                                        {
+                                          "type": "span",
+                                          "text": "12: Improve load times",
+                                          "props": {},
+                                          "componentName": null
+                                        }
+                                      ],
+                                      "componentName": null
+                                    }
+                                  ]
+                                }
                               ],
-                              "props": {}
+                              "text": ""
+                            }
+                          ]
+                        },
+                        {
+                          "type": "Panel",
+                          "props": {
+                            "header": {
+                              "type": "h3",
+                              "props": {},
+                              "children": [
+                                {
+                                  "type": "span",
+                                  "text": "IceSlider",
+                                  "props": {}
+                                }
+                              ]
+                            },
+                            "bsStyle": "warning"
+                          },
+                          "children": [
+                            {
+                              "type": "span",
+                              "text": "The platform for coders to connect"
+                            },
+                            {
+                              "type": "Panel",
+                              "props": {
+                                "header": {
+                                  "type": "h5",
+                                  "props": {},
+                                  "children": [
+                                    {
+                                      "type": "span",
+                                      "text": "Tasks",
+                                      "props": {}
+                                    }
+                                  ]
+                                },
+                                "style": {
+                                  "overflow": "auto"
+                                },
+                                "collapsible": true,
+                                "defaultExpanded": false,
+                                "bsStyle": "success"
+                              },
+                              "children": [
+                                {
+                                  "type": "ListGroup",
+                                  "props": {
+                                    "fill": true
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "ListGroupItem",
+                                      "props": {
+                                        "href": "#",
+                                        "bsStyle": "",
+                                        "active": false,
+                                        "style": {
+                                          "minHeight": "50px"
+                                        }
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "Button",
+                                          "props": {
+                                            "bsStyle": "success",
+                                            "style": {
+                                              "cssFloat": "right"
+                                            },
+                                            "href": "https://github.com/gapsong/TowerDefense"
+                                          },
+                                          "children": [
+                                            {
+                                              "type": "span",
+                                              "text": "Default",
+                                              "props": {},
+                                              "componentName": null
+                                            }
+                                          ],
+                                          "componentName": null
+                                        },
+                                        {
+                                          "type": "span",
+                                          "text": "11: Add Advertising",
+                                          "props": {},
+                                          "componentName": null
+                                        }
+                                      ],
+                                      "componentName": null
+                                    },
+                                    {
+                                      "type": "ListGroupItem",
+                                      "props": {
+                                        "href": "#",
+                                        "bsStyle": "",
+                                        "active": false,
+                                        "style": {
+                                          "minHeight": "50px"
+                                        }
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "Button",
+                                          "props": {
+                                            "bsStyle": "success",
+                                            "style": {
+                                              "cssFloat": "right"
+                                            },
+                                            "href": "https://github.com/gapsong/TowerDefense"
+                                          },
+                                          "children": [
+                                            {
+                                              "type": "span",
+                                              "text": "Default",
+                                              "props": {},
+                                              "componentName": null
+                                            }
+                                          ],
+                                          "componentName": null
+                                        },
+                                        {
+                                          "type": "span",
+                                          "text": "13: Add MuteButton",
+                                          "props": {},
+                                          "componentName": null
+                                        }
+                                      ],
+                                      "componentName": null
+                                    },
+                                    {
+                                      "type": "ListGroupItem",
+                                      "props": {
+                                        "href": "#",
+                                        "bsStyle": "",
+                                        "active": false,
+                                        "style": {
+                                          "minHeight": "50px"
+                                        }
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "Button",
+                                          "props": {
+                                            "bsStyle": "success",
+                                            "style": {
+                                              "cssFloat": "right"
+                                            },
+                                            "href": "https://github.com/gapsong/TowerDefense"
+                                          },
+                                          "children": [
+                                            {
+                                              "type": "span",
+                                              "text": "Default",
+                                              "props": {},
+                                              "componentName": null
+                                            }
+                                          ],
+                                          "componentName": null
+                                        },
+                                        {
+                                          "type": "span",
+                                          "text": "14: Redesign MainMenu",
+                                          "props": {},
+                                          "componentName": null
+                                        }
+                                      ],
+                                      "componentName": null
+                                    },
+                                    {
+                                      "type": "ListGroupItem",
+                                      "props": {
+                                        "href": "#",
+                                        "bsStyle": "",
+                                        "active": false,
+                                        "style": {
+                                          "minHeight": "50px"
+                                        }
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "Button",
+                                          "props": {
+                                            "bsStyle": "success",
+                                            "style": {
+                                              "cssFloat": "right"
+                                            },
+                                            "href": "https://github.com/gapsong/TowerDefense"
+                                          },
+                                          "children": [
+                                            {
+                                              "type": "span",
+                                              "text": "Default",
+                                              "props": {},
+                                              "componentName": null
+                                            }
+                                          ],
+                                          "componentName": null
+                                        },
+                                        {
+                                          "type": "span",
+                                          "text": "16: Redesign Icon",
+                                          "props": {},
+                                          "componentName": null
+                                        }
+                                      ],
+                                      "componentName": null
+                                    }
+                                  ]
+                                }
+                              ],
+                              "text": ""
+                            }
+                          ]
+                        },
+                        {
+                          "type": "Panel",
+                          "props": {
+                            "header": {
+                              "type": "h3",
+                              "props": {},
+                              "children": [
+                                {
+                                  "type": "span",
+                                  "text": "TowerDefense",
+                                  "props": {}
+                                }
+                              ]
+                            },
+                            "bsStyle": "warning"
+                          },
+                          "children": [
+                            {
+                              "type": "span",
+                              "text": "The platform for coders to connect"
+                            },
+                            {
+                              "type": "Panel",
+                              "props": {
+                                "header": {
+                                  "type": "h5",
+                                  "props": {},
+                                  "children": [
+                                    {
+                                      "type": "span",
+                                      "text": "Tasks",
+                                      "props": {}
+                                    }
+                                  ]
+                                },
+                                "style": {
+                                  "overflow": "auto"
+                                },
+                                "collapsible": true,
+                                "defaultExpanded": false,
+                                "bsStyle": "success"
+                              },
+                              "children": [
+                                {
+                                  "type": "ListGroup",
+                                  "props": {
+                                    "fill": true
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "ListGroupItem",
+                                      "props": {
+                                        "href": "#",
+                                        "bsStyle": "",
+                                        "active": false,
+                                        "style": {
+                                          "minHeight": "50px"
+                                        }
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "Button",
+                                          "props": {
+                                            "bsStyle": "success",
+                                            "style": {
+                                              "cssFloat": "right"
+                                            },
+                                            "href": "https://github.com/gapsong/TowerDefense"
+                                          },
+                                          "children": [
+                                            {
+                                              "type": "span",
+                                              "text": "Default",
+                                              "props": {},
+                                              "componentName": null
+                                            }
+                                          ],
+                                          "componentName": null
+                                        },
+                                        {
+                                          "type": "span",
+                                          "text": "11: Add Advertising",
+                                          "props": {},
+                                          "componentName": null
+                                        }
+                                      ],
+                                      "componentName": null
+                                    },
+                                    {
+                                      "type": "ListGroupItem",
+                                      "props": {
+                                        "href": "#",
+                                        "bsStyle": "",
+                                        "active": false,
+                                        "style": {
+                                          "minHeight": "50px"
+                                        }
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "Button",
+                                          "props": {
+                                            "bsStyle": "success",
+                                            "style": {
+                                              "cssFloat": "right"
+                                            },
+                                            "href": "https://github.com/gapsong/TowerDefense"
+                                          },
+                                          "children": [
+                                            {
+                                              "type": "span",
+                                              "text": "Default",
+                                              "props": {},
+                                              "componentName": null
+                                            }
+                                          ],
+                                          "componentName": null
+                                        },
+                                        {
+                                          "type": "span",
+                                          "text": "13: Add MuteButton",
+                                          "props": {},
+                                          "componentName": null
+                                        }
+                                      ],
+                                      "componentName": null
+                                    },
+                                    {
+                                      "type": "ListGroupItem",
+                                      "props": {
+                                        "href": "#",
+                                        "bsStyle": "",
+                                        "active": false,
+                                        "style": {
+                                          "minHeight": "50px"
+                                        }
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "Button",
+                                          "props": {
+                                            "bsStyle": "success",
+                                            "style": {
+                                              "cssFloat": "right"
+                                            },
+                                            "href": "https://github.com/gapsong/TowerDefense"
+                                          },
+                                          "children": [
+                                            {
+                                              "type": "span",
+                                              "text": "Default",
+                                              "props": {},
+                                              "componentName": null
+                                            }
+                                          ],
+                                          "componentName": null
+                                        },
+                                        {
+                                          "type": "span",
+                                          "text": "14: Redesign MainMenu",
+                                          "props": {},
+                                          "componentName": null
+                                        }
+                                      ],
+                                      "componentName": null
+                                    },
+                                    {
+                                      "type": "ListGroupItem",
+                                      "props": {
+                                        "href": "#",
+                                        "bsStyle": "",
+                                        "active": false,
+                                        "style": {
+                                          "minHeight": "50px"
+                                        }
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "Button",
+                                          "props": {
+                                            "bsStyle": "success",
+                                            "style": {
+                                              "cssFloat": "right"
+                                            },
+                                            "href": "https://github.com/gapsong/TowerDefense"
+                                          },
+                                          "children": [
+                                            {
+                                              "type": "span",
+                                              "text": "Default",
+                                              "props": {},
+                                              "componentName": null
+                                            }
+                                          ],
+                                          "componentName": null
+                                        },
+                                        {
+                                          "type": "span",
+                                          "text": "16: Redesign Icon",
+                                          "props": {},
+                                          "componentName": null
+                                        }
+                                      ],
+                                      "componentName": null
+                                    }
+                                  ]
+                                }
+                              ],
+                              "text": ""
                             }
                           ]
                         }
@@ -286,163 +1453,6 @@
                   "props": {}
                 }
               ]
-            },
-            {
-              "type": "SearchFilter",
-              "props": {
-                "filter": [
-                  {
-                    "title": "Language",
-                    "options": [
-                      "JavaScript",
-                      "HTML",
-                      "CSS"
-                    ]
-                  },
-                  {
-                    "title": "Difficulty",
-                    "options": [
-                      "Beginner",
-                      "Intermediate",
-                      "Advanced"
-                    ]
-                  }
-                ]
-              }
-            },
-            {
-              "type": "ListGroupItem",
-              "props": {
-                "href": "/opentasks"
-              },
-              "children": [
-                {
-                  "type": "table",
-                  "children": [
-                    {
-                      "type": "thead",
-                      "children": [
-                        {
-                          "type": "tr",
-                          "children": [
-                            {
-                              "type": "th",
-                              "children": [
-                                {
-                                  "type": "h3",
-                                  "children": [
-                                    {
-                                      "type": "span",
-                                      "text": "Project X"
-                                    }
-                                  ]
-                                }
-                              ]
-                            },
-                            {
-                              "type": "th",
-                              "children": []
-                            },
-                            {
-                              "type": "th",
-                              "children": []
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "tbody",
-                      "children": [
-                        {
-                          "type": "tr",
-                          "children": [
-                            {
-                              "type": "td",
-                              "children": [
-                                {
-                                  "type": "Link",
-                                  "props": {
-                                    "to": "/main"
-                                  },
-                                  "children": [
-                                    {
-                                      "type": "span",
-                                      "text": "www.x.project"
-                                    }
-                                  ]
-                                }
-                              ]
-                            },
-                            {
-                              "type": "td",
-                              "children": [
-                                {
-                                  "type": "span",
-                                  "text": "50 Tasks"
-                                },
-                                {
-                                  "type": "span",
-                                  "text": "20 Contributors",
-                                  "props": {
-                                    "style": {
-                                      "cssFloat": "right"
-                                    }
-                                  }
-                                }
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "type": "tr",
-                          "children": [
-                            {
-                              "type": "td",
-                              "children": [
-                                {
-                                  "type": "i",
-                                  "props": {
-                                    "className": "fa fa-star"
-                                  }
-                                },
-                                {
-                                  "type": "i",
-                                  "props": {
-                                    "className": "fa fa-star"
-                                  }
-                                },
-                                {
-                                  "type": "i",
-                                  "props": {
-                                    "className": "fa fa-star"
-                                  }
-                                },
-                                {
-                                  "type": "i",
-                                  "props": {
-                                    "className": "fa fa-star"
-                                  }
-                                }
-                              ]
-                            },
-                            {
-                              "type": "td",
-                              "children": [
-                                {
-                                  "type": "span",
-                                  "text": "An awesome Project about X"
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ],
-              "componentName": null
             }
           ]
         }
@@ -853,155 +1863,217 @@
           ]
         },
         {
-          "type": "table",
-          "children": [
-            {
-              "type": "thead",
+          "type": "Panel",
+          "props": {
+            "header": {
+              "type": "h3",
+              "props": {},
               "children": [
                 {
-                  "type": "tr",
-                  "children": [
-                    {
-                      "type": "th",
-                      "children": [
-                        {
-                          "type": "h3",
-                          "children": [
-                            {
-                              "type": "span",
-                              "text": "Project X:"
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "th",
-                      "children": [
-                        {
-                          "type": "h4",
-                          "children": [
-                            {
-                              "type": "span",
-                              "text": "Add a Search Bar"
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "th",
-                      "children": [
-                        {
-                          "type": "span",
-                          "text": ""
-                        }
-                      ]
-                    },
-                    {
-                      "type": "th",
-                      "children": [
-                        {
-                          "variantName": "prev-next align",
-                          "type": "Pager",
-                          "props": {},
-                          "children": [
-                            {
-                              "type": "PageItem",
-                              "props": {
-                                "href": "#",
-                                "previous": true
-                              },
-                              "children": [
-                                {
-                                  "type": "span",
-                                  "props": {},
-                                  "children": [],
-                                  "text": "Previous"
-                                }
-                              ]
-                            },
-                            {
-                              "type": "PageItem",
-                              "props": {
-                                "href": "#",
-                                "next": true
-                              },
-                              "children": [
-                                {
-                                  "type": "span",
-                                  "props": {},
-                                  "children": [],
-                                  "text": "Next"
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
+                  "type": "span",
+                  "text": "Code Connect",
+                  "props": {}
                 }
               ]
             },
+            "bsStyle": "warning"
+          },
+          "children": [
             {
-              "type": "tbody",
-              "children": [
-                {
-                  "type": "tr",
+              "type": "Panel",
+              "props": {
+                "header": {
+                  "type": "h5",
+                  "props": {},
                   "children": [
                     {
-                      "type": "td",
-                      "children": [
-                        {
-                          "type": "span",
-                          "text": ""
-                        }
-                      ]
-                    },
-                    {
-                      "type": "td",
-                      "children": [
-                        {
-                          "type": "span",
-                          "text": ""
-                        }
-                      ]
-                    },
-                    {
-                      "type": "td",
-                      "children": [
-                        {
-                          "type": "span",
-                          "text": ""
-                        }
-                      ]
+                      "type": "span",
+                      "text": "Tasks",
+                      "props": {}
                     }
                   ]
                 },
+                "style": {
+                  "overflow": "auto"
+                },
+                "collapsible": true,
+                "defaultExpanded": true,
+                "bsStyle": "success"
+              },
+              "children": [
                 {
-                  "type": "tr",
+                  "type": "ListGroup",
+                  "props": {
+                    "fill": true
+                  },
                   "children": [
                     {
-                      "type": "td",
+                      "type": "ListGroupItem",
+                      "props": {
+                        "href": "#",
+                        "active": false,
+                        "bsStyle": "success"
+                      },
                       "children": [
                         {
                           "type": "span",
-                          "text": ""
-                        }
-                      ]
-                    },
-                    {
-                      "type": "td",
-                      "children": [
+                          "text": "10: Search Functionality in Navigation Bar",
+                          "props": {}
+                        },
                         {
                           "type": "Input",
                           "props": {
                             "type": "select",
                             "hasFeedback": true,
                             "placeholder": "Enter value",
-                            "label": "Status",
-                            "help": "Help for input"
+                            "label": "Status"
+                          },
+                          "children": [
+                            {
+                              "type": "option",
+                              "props": {},
+                              "children": [],
+                              "text": "Done"
+                            },
+                            {
+                              "type": "option",
+                              "props": {},
+                              "children": [],
+                              "text": "in Progress"
+                            },
+                            {
+                              "type": "option",
+                              "props": {},
+                              "children": [],
+                              "text": "Partial"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "Panel",
+                          "props": {
+                            "header": {
+                              "type": "h5",
+                              "props": {},
+                              "children": [
+                                {
+                                  "type": "span",
+                                  "text": "Review in Progress",
+                                  "props": {}
+                                }
+                              ]
+                            },
+                            "style": {
+                              "overflow": "auto"
+                            },
+                            "collapsible": true,
+                            "defaultExpanded": true,
+                            "bsStyle": "warning"
+                          },
+                          "children": [
+                            {
+                              "type": "ListGroup",
+                              "props": {
+                                "fill": true
+                              },
+                              "children": [
+                                {
+                                  "type": "ListGroupItem",
+                                  "props": {
+                                    "href": "#"
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "span",
+                                      "text": "Code Clarity: ",
+                                      "props": {},
+                                      "componentName": null
+                                    }
+                                  ],
+                                  "componentName": null
+                                },
+                                {
+                                  "type": "ListGroupItem",
+                                  "props": {
+                                    "href": "#"
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "span",
+                                      "text": "Code Efficiency: ",
+                                      "props": {},
+                                      "componentName": null
+                                    }
+                                  ],
+                                  "componentName": null
+                                },
+                                {
+                                  "type": "ListGroupItem",
+                                  "props": {
+                                    "href": "#"
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "span",
+                                      "text": "Documentation: ",
+                                      "props": {},
+                                      "componentName": null
+                                    }
+                                  ],
+                                  "componentName": null
+                                },
+                                {
+                                  "type": "ListGroupItem",
+                                  "props": {
+                                    "href": "#"
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "span",
+                                      "text": "Recommendations: ",
+                                      "props": {},
+                                      "componentName": null
+                                    },
+                                    {
+                                      "type": "Tab"
+                                    },
+                                    {
+                                      "type": "span",
+                                      "text": "",
+                                      "props": {},
+                                      "componentName": null
+                                    }
+                                  ],
+                                  "componentName": null
+                                }
+                              ]
+                            }
+                          ],
+                          "text": ""
+                        }
+                      ]
+                    },
+                    {
+                      "type": "ListGroupItem",
+                      "props": {
+                        "href": "#",
+                        "bsStyle": "",
+                        "active": false
+                      },
+                      "children": [
+                        {
+                          "type": "span",
+                          "text": "12: Improve load times",
+                          "props": {},
+                          "componentName": null
+                        },
+                        {
+                          "type": "Input",
+                          "props": {
+                            "type": "select",
+                            "hasFeedback": true,
+                            "placeholder": "Enter value",
+                            "label": "Status"
                           },
                           "children": [
                             {
@@ -1023,127 +2095,310 @@
                               "text": "Partial"
                             }
                           ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "td",
-                      "children": [
+                        },
                         {
-                          "type": "span",
-                          "text": ""
-                        }
-                      ]
-                    },
-                    {
-                      "type": "td",
-                      "children": [
-                        {
-                          "type": "span",
-                          "text": ""
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "tr",
-                  "children": [
-                    {
-                      "type": "td",
-                      "children": [
-                        {
-                          "type": "span",
-                          "text": ""
-                        }
-                      ]
-                    },
-                    {
-                      "type": "td",
-                      "children": [
-                        {
-                          "type": "span",
-                          "text": ""
-                        }
-                      ]
-                    },
-                    {
-                      "type": "td",
-                      "children": [
-                        {
-                          "type": "span",
-                          "text": ""
-                        }
-                      ]
-                    },
-                    {
-                      "type": "td",
-                      "children": [
-                        {
-                          "type": "Button",
+                          "type": "Input",
                           "props": {
-                            "bsStyle": "success"
+                            "type": "text",
+                            "placeholder": "Pull Request Link",
+                            "buttonAfter": {
+                              "type": "Button",
+                              "props": {
+                                "bsStyle": "default"
+                              },
+                              "children": [
+                                {
+                                  "type": "span",
+                                  "text": "Default",
+                                  "props": {}
+                                }
+                              ]
+                            },
+                            "addonBefore": "Pull Request:"
+                          },
+                          "children": []
+                        }
+                      ],
+                      "componentName": null
+                    },
+                    {
+                      "type": "ListGroupItem",
+                      "props": {
+                        "href": "#",
+                        "active": false,
+                        "bsStyle": "success"
+                      },
+                      "children": [
+                        {
+                          "type": "span",
+                          "text": "16: Redesign Icon",
+                          "props": {}
+                        },
+                        {
+                          "type": "Input",
+                          "props": {
+                            "type": "select",
+                            "hasFeedback": true,
+                            "placeholder": "Enter value",
+                            "label": "Status"
                           },
                           "children": [
                             {
-                              "type": "span",
-                              "text": "Submit",
+                              "type": "option",
                               "props": {},
-                              "componentName": null
+                              "children": [],
+                              "text": "Done"
+                            },
+                            {
+                              "type": "option",
+                              "props": {},
+                              "children": [],
+                              "text": "in Progress"
+                            },
+                            {
+                              "type": "option",
+                              "props": {},
+                              "children": [],
+                              "text": "Partial"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "Panel",
+                          "props": {
+                            "header": {
+                              "type": "h5",
+                              "props": {},
+                              "children": [
+                                {
+                                  "type": "span",
+                                  "text": "FeedBack",
+                                  "props": {}
+                                }
+                              ]
+                            },
+                            "style": {
+                              "overflow": "auto"
+                            },
+                            "collapsible": true,
+                            "defaultExpanded": true,
+                            "bsStyle": "warning"
+                          },
+                          "children": [
+                            {
+                              "type": "ListGroup",
+                              "props": {
+                                "fill": true
+                              },
+                              "children": [
+                                {
+                                  "type": "ListGroupItem",
+                                  "props": {
+                                    "href": "#"
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "span",
+                                      "text": "Code Clarity: ",
+                                      "props": {},
+                                      "componentName": null
+                                    },
+                                    {
+                                      "type": "i",
+                                      "props": {
+                                        "className": "fa fa-star"
+                                      }
+                                    },
+                                    {
+                                      "type": "i",
+                                      "props": {
+                                        "className": "fa fa-star"
+                                      }
+                                    },
+                                    {
+                                      "type": "i",
+                                      "props": {
+                                        "className": "fa fa-star"
+                                      }
+                                    },
+                                    {
+                                      "type": "i",
+                                      "props": {
+                                        "className": "fa fa-star"
+                                      }
+                                    }
+                                  ],
+                                  "componentName": null
+                                },
+                                {
+                                  "type": "ListGroupItem",
+                                  "props": {
+                                    "href": "#"
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "span",
+                                      "text": "Code Efficiency: ",
+                                      "props": {},
+                                      "componentName": null
+                                    },
+                                    {
+                                      "type": "i",
+                                      "props": {
+                                        "className": "fa fa-star"
+                                      }
+                                    },
+                                    {
+                                      "type": "i",
+                                      "props": {
+                                        "className": "fa fa-star"
+                                      }
+                                    }
+                                  ],
+                                  "componentName": null
+                                },
+                                {
+                                  "type": "ListGroupItem",
+                                  "props": {
+                                    "href": "#"
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "span",
+                                      "text": "Documentation: ",
+                                      "props": {},
+                                      "componentName": null
+                                    },
+                                    {
+                                      "type": "i",
+                                      "props": {
+                                        "className": "fa fa-star"
+                                      }
+                                    },
+                                    {
+                                      "type": "i",
+                                      "props": {
+                                        "className": "fa fa-star"
+                                      }
+                                    },
+                                    {
+                                      "type": "i",
+                                      "props": {
+                                        "className": "fa fa-star"
+                                      }
+                                    }
+                                  ],
+                                  "componentName": null
+                                },
+                                {
+                                  "type": "ListGroupItem",
+                                  "props": {
+                                    "href": "#"
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "span",
+                                      "text": "Recommendations: ",
+                                      "props": {},
+                                      "componentName": null
+                                    },
+                                    {
+                                      "type": "Tab"
+                                    },
+                                    {
+                                      "type": "span",
+                                      "text": "Try more Refectoring",
+                                      "props": {},
+                                      "componentName": null
+                                    }
+                                  ],
+                                  "componentName": null
+                                }
+                              ]
                             }
                           ],
-                          "componentName": null
+                          "text": ""
+                        },
+                        {
+                          "type": "Panel",
+                          "props": {
+                            "header": {
+                              "type": "h5",
+                              "props": {},
+                              "children": [
+                                {
+                                  "type": "span",
+                                  "text": "Rate your Mentor",
+                                  "props": {}
+                                }
+                              ]
+                            },
+                            "style": {
+                              "overflow": "auto"
+                            },
+                            "collapsible": true,
+                            "defaultExpanded": true,
+                            "bsStyle": "warning"
+                          },
+                          "children": [
+                            {
+                              "type": "ListGroup",
+                              "props": {
+                                "fill": true
+                              },
+                              "children": [
+                                {
+                                  "type": "ListGroupItem",
+                                  "props": {
+                                    "href": "#"
+                                  },
+                                  "children": [
+                                    {
+                                      "variantName": "default",
+                                      "type": "Pagination",
+                                      "props": {
+                                        "bsSize": "medium",
+                                        "items": 10,
+                                        "activePage": 3,
+                                        "prev": false,
+                                        "next": false,
+                                        "first": false,
+                                        "last": false,
+                                        "ellipsis": false,
+                                        "maxButtons": 10
+                                      }
+                                    },
+                                    {
+                                      "type": "Button",
+                                      "props": {
+                                        "bsStyle": "success"
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "span",
+                                          "text": "Submit",
+                                          "props": {},
+                                          "componentName": null
+                                        }
+                                      ],
+                                      "componentName": null
+                                    }
+                                  ],
+                                  "componentName": null
+                                }
+                              ]
+                            }
+                          ],
+                          "text": ""
                         }
                       ]
                     }
                   ]
                 }
-              ]
+              ],
+              "text": ""
             }
           ]
-        },
-        {
-          "type": "h4",
-          "children": [
-            {
-              "type": "span",
-              "text": "Rate your Mentor"
-            }
-          ]
-        },
-        {
-          "variantName": "default",
-          "type": "Pagination",
-          "props": {
-            "bsSize": "medium",
-            "items": 10,
-            "activePage": 3,
-            "prev": false,
-            "next": false,
-            "first": false,
-            "last": false,
-            "ellipsis": false,
-            "maxButtons": 10
-          }
-        },
-        {
-          "type": "Button",
-          "props": {
-            "bsStyle": "success"
-          },
-          "children": [
-            {
-              "type": "span",
-              "text": "Submit",
-              "props": {},
-              "componentName": null
-            }
-          ],
-          "componentName": null
-        },
-        {
-          "type": "TestPanel",
-          "props": {}
         }
       ]
     },

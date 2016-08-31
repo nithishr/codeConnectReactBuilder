@@ -1,12 +1,16 @@
 
 import React, { Component, PropTypes } from 'react';
 
-import { Link } from 'react-router';
+import { Grid } from 'react-bootstrap';
+import { Row } from 'react-bootstrap';
+import { Col } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
+import { Panel } from 'react-bootstrap';
 import { ListGroup } from 'react-bootstrap';
 import { ListGroupItem } from 'react-bootstrap';
 import { PageHeader } from 'react-bootstrap';
 import NavBar from '../views/Test/NavBar.jsx';
-import DynamicList from '../views/Test/DynamicList.jsx';
+import SearchFilter from '../views/Test/SearchFilter.jsx';
 
 
 class Contributor extends Component {
@@ -23,56 +27,214 @@ class Contributor extends Component {
                           location={ this.props.location }>Select your Project</span>
                 </PageHeader>
                 <ListGroup params={ this.props.params } location={ this.props.location }>
-                    <ListGroupItem href="/opentasks"
+                    <Grid fluid={ true }
+                          params={ this.props.params }
+                          location={ this.props.location }>
+                        <Row params={ this.props.params } location={ this.props.location }>
+                            <Col xs={ 3 }
+                                 md={ 2 }
+                                 sm={ 2 }
+                                 lg={ 2 }
+                                 params={ this.props.params }
+                                 location={ this.props.location }>
+                            <SearchFilter filter={ [{ title: 'Platform' }, { title: 'Language' }, { title: 'Difficulty' }] }
+                                          style={ {  } }
+                                          params={ this.props.params }
+                                          location={ this.props.location }></SearchFilter>
+                            </Col>
+                            <Col xs={ 6 }
+                                 md={ 10 }
+                                 sm={ 10 }
+                                 lg={ 10 }
+                                 params={ this.props.params }
+                                 location={ this.props.location }>
+                            <Panel header={ <h3 params={ this.props.params } location={ this.props.location }><span params={ this.props.params } location={ this.props.location }>Code Connect</span></h3> }
+                                   bsStyle="warning"
                                    params={ this.props.params }
                                    location={ this.props.location }>
-                        <table params={ this.props.params } location={ this.props.location }>
-                            <thead params={ this.props.params } location={ this.props.location }>
-                                <tr params={ this.props.params } location={ this.props.location }>
-                                    <th params={ this.props.params } location={ this.props.location }>
-                                        <h3 params={ this.props.params } location={ this.props.location }><span params={ this.props.params } location={ this.props.location }>Project X</span></h3>
-                                    </th>
-                                    <th params={ this.props.params } location={ this.props.location }></th>
-                                    <th params={ this.props.params } location={ this.props.location }></th>
-                                </tr>
-                            </thead>
-                            <tbody params={ this.props.params } location={ this.props.location }>
-                                <tr params={ this.props.params } location={ this.props.location }>
-                                    <td params={ this.props.params } location={ this.props.location }>
-                                        <Link to="/main"
-                                              params={ this.props.params }
-                                              location={ this.props.location }>
-                                        <span params={ this.props.params } location={ this.props.location }>www.x.project</span>
-                                        </Link>
-                                    </td>
-                                    <td params={ this.props.params } location={ this.props.location }>
-                                        <span params={ this.props.params } location={ this.props.location }>50 Tasks</span><span style={ { cssFloat: 'right' } }
-                                                                                                                               params={ this.props.params }
-                                                                                                                               location={ this.props.location }>20 Contributors</span>
-                                    </td>
-                                </tr>
-                                <tr params={ this.props.params } location={ this.props.location }>
-                                    <td params={ this.props.params } location={ this.props.location }>
-                                        <i className="fa fa-star"
-                                           params={ this.props.params }
-                                           location={ this.props.location }></i><i className="fa fa-star"
-                                                                                                                                     params={ this.props.params }
-                                                                                                                                     location={ this.props.location }></i><i className="fa fa-star"
-                                                                                  params={ this.props.params }
-                                                                                  location={ this.props.location }></i><i className="fa fa-star"
-                                                                                                                                                                            params={ this.props.params }
-                                                                                                                                                                            location={ this.props.location }></i>
-                                    </td>
-                                    <td params={ this.props.params } location={ this.props.location }>
-                                        <span params={ this.props.params } location={ this.props.location }>An awesome Project about X</span>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </ListGroupItem>
-                    <DynamicList listData={ [{ id: '12', title: 'Thunder' }, { id: '199', title: 'Thunjhder', content: 'con12hj3' }] }
-                                 params={ this.props.params }
-                                 location={ this.props.location }></DynamicList>
+                                <span params={ this.props.params } location={ this.props.location }>The platform for coders to connect</span>
+                                <Panel header={ <h5 params={ this.props.params } location={ this.props.location }><span params={ this.props.params } location={ this.props.location }>Tasks</span></h5> }
+                                       style={ { overflow: 'auto' } }
+                                       collapsible={ true }
+                                       defaultExpanded={ false }
+                                       bsStyle="success"
+                                       params={ this.props.params }
+                                       location={ this.props.location }>
+                                    <ListGroup fill={ true }
+                                               params={ this.props.params }
+                                               location={ this.props.location }>
+                                        <ListGroupItem href="#"
+                                                       active={ false }
+                                                       style={ { minHeight: '50px' } }
+                                                       params={ this.props.params }
+                                                       location={ this.props.location }>
+                                            <Button bsStyle="success"
+                                                    style={ { cssFloat: 'right' } }
+                                                    href="https://github.com/nithishr/codeConnect"
+                                                    params={ this.props.params }
+                                                    location={ this.props.location }>
+                                                <span params={ this.props.params } location={ this.props.location }>Default</span>
+                                            </Button><span params={ this.props.params } location={ this.props.location }>10: Search Functionality in Navigation Bar</span>
+                                        </ListGroupItem>
+                                        <ListGroupItem href="#"
+                                                       active={ false }
+                                                       style={ { minHeight: '50px' } }
+                                                       params={ this.props.params }
+                                                       location={ this.props.location }>
+                                            <Button bsStyle="success"
+                                                    style={ { cssFloat: 'right' } }
+                                                    href="https://github.com/nithishr/codeConnect"
+                                                    params={ this.props.params }
+                                                    location={ this.props.location }>
+                                                <span params={ this.props.params } location={ this.props.location }>Default</span>
+                                            </Button><span params={ this.props.params } location={ this.props.location }>12: Improve load times</span>
+                                        </ListGroupItem>
+                                    </ListGroup>
+                                </Panel>
+                            </Panel>
+                            <Panel header={ <h3 params={ this.props.params } location={ this.props.location }><span params={ this.props.params } location={ this.props.location }>IceSlider</span></h3> }
+                                   bsStyle="warning"
+                                   params={ this.props.params }
+                                   location={ this.props.location }>
+                                <span params={ this.props.params } location={ this.props.location }>The platform for coders to connect</span>
+                                <Panel header={ <h5 params={ this.props.params } location={ this.props.location }><span params={ this.props.params } location={ this.props.location }>Tasks</span></h5> }
+                                       style={ { overflow: 'auto' } }
+                                       collapsible={ true }
+                                       defaultExpanded={ false }
+                                       bsStyle="success"
+                                       params={ this.props.params }
+                                       location={ this.props.location }>
+                                    <ListGroup fill={ true }
+                                               params={ this.props.params }
+                                               location={ this.props.location }>
+                                        <ListGroupItem href="#"
+                                                       active={ false }
+                                                       style={ { minHeight: '50px' } }
+                                                       params={ this.props.params }
+                                                       location={ this.props.location }>
+                                            <Button bsStyle="success"
+                                                    style={ { cssFloat: 'right' } }
+                                                    href="https://github.com/gapsong/TowerDefense"
+                                                    params={ this.props.params }
+                                                    location={ this.props.location }>
+                                                <span params={ this.props.params } location={ this.props.location }>Default</span>
+                                            </Button><span params={ this.props.params } location={ this.props.location }>11: Add Advertising</span>
+                                        </ListGroupItem>
+                                        <ListGroupItem href="#"
+                                                       active={ false }
+                                                       style={ { minHeight: '50px' } }
+                                                       params={ this.props.params }
+                                                       location={ this.props.location }>
+                                            <Button bsStyle="success"
+                                                    style={ { cssFloat: 'right' } }
+                                                    href="https://github.com/gapsong/TowerDefense"
+                                                    params={ this.props.params }
+                                                    location={ this.props.location }>
+                                                <span params={ this.props.params } location={ this.props.location }>Default</span>
+                                            </Button><span params={ this.props.params } location={ this.props.location }>13: Add MuteButton</span>
+                                        </ListGroupItem>
+                                        <ListGroupItem href="#"
+                                                       active={ false }
+                                                       style={ { minHeight: '50px' } }
+                                                       params={ this.props.params }
+                                                       location={ this.props.location }>
+                                            <Button bsStyle="success"
+                                                    style={ { cssFloat: 'right' } }
+                                                    href="https://github.com/gapsong/TowerDefense"
+                                                    params={ this.props.params }
+                                                    location={ this.props.location }>
+                                                <span params={ this.props.params } location={ this.props.location }>Default</span>
+                                            </Button><span params={ this.props.params } location={ this.props.location }>14: Redesign MainMenu</span>
+                                        </ListGroupItem>
+                                        <ListGroupItem href="#"
+                                                       active={ false }
+                                                       style={ { minHeight: '50px' } }
+                                                       params={ this.props.params }
+                                                       location={ this.props.location }>
+                                            <Button bsStyle="success"
+                                                    style={ { cssFloat: 'right' } }
+                                                    href="https://github.com/gapsong/TowerDefense"
+                                                    params={ this.props.params }
+                                                    location={ this.props.location }>
+                                                <span params={ this.props.params } location={ this.props.location }>Default</span>
+                                            </Button><span params={ this.props.params } location={ this.props.location }>16: Redesign Icon</span>
+                                        </ListGroupItem>
+                                    </ListGroup>
+                                </Panel>
+                            </Panel>
+                            <Panel header={ <h3 params={ this.props.params } location={ this.props.location }><span params={ this.props.params } location={ this.props.location }>TowerDefense</span></h3> }
+                                   bsStyle="warning"
+                                   params={ this.props.params }
+                                   location={ this.props.location }>
+                                <span params={ this.props.params } location={ this.props.location }>The platform for coders to connect</span>
+                                <Panel header={ <h5 params={ this.props.params } location={ this.props.location }><span params={ this.props.params } location={ this.props.location }>Tasks</span></h5> }
+                                       style={ { overflow: 'auto' } }
+                                       collapsible={ true }
+                                       defaultExpanded={ false }
+                                       bsStyle="success"
+                                       params={ this.props.params }
+                                       location={ this.props.location }>
+                                    <ListGroup fill={ true }
+                                               params={ this.props.params }
+                                               location={ this.props.location }>
+                                        <ListGroupItem href="#"
+                                                       active={ false }
+                                                       style={ { minHeight: '50px' } }
+                                                       params={ this.props.params }
+                                                       location={ this.props.location }>
+                                            <Button bsStyle="success"
+                                                    style={ { cssFloat: 'right' } }
+                                                    href="https://github.com/gapsong/TowerDefense"
+                                                    params={ this.props.params }
+                                                    location={ this.props.location }>
+                                                <span params={ this.props.params } location={ this.props.location }>Default</span>
+                                            </Button><span params={ this.props.params } location={ this.props.location }>11: Add Advertising</span>
+                                        </ListGroupItem>
+                                        <ListGroupItem href="#"
+                                                       active={ false }
+                                                       style={ { minHeight: '50px' } }
+                                                       params={ this.props.params }
+                                                       location={ this.props.location }>
+                                            <Button bsStyle="success"
+                                                    style={ { cssFloat: 'right' } }
+                                                    href="https://github.com/gapsong/TowerDefense"
+                                                    params={ this.props.params }
+                                                    location={ this.props.location }>
+                                                <span params={ this.props.params } location={ this.props.location }>Default</span>
+                                            </Button><span params={ this.props.params } location={ this.props.location }>13: Add MuteButton</span>
+                                        </ListGroupItem>
+                                        <ListGroupItem href="#"
+                                                       active={ false }
+                                                       style={ { minHeight: '50px' } }
+                                                       params={ this.props.params }
+                                                       location={ this.props.location }>
+                                            <Button bsStyle="success"
+                                                    style={ { cssFloat: 'right' } }
+                                                    href="https://github.com/gapsong/TowerDefense"
+                                                    params={ this.props.params }
+                                                    location={ this.props.location }>
+                                                <span params={ this.props.params } location={ this.props.location }>Default</span>
+                                            </Button><span params={ this.props.params } location={ this.props.location }>14: Redesign MainMenu</span>
+                                        </ListGroupItem>
+                                        <ListGroupItem href="#"
+                                                       active={ false }
+                                                       style={ { minHeight: '50px' } }
+                                                       params={ this.props.params }
+                                                       location={ this.props.location }>
+                                            <Button bsStyle="success"
+                                                    style={ { cssFloat: 'right' } }
+                                                    href="https://github.com/gapsong/TowerDefense"
+                                                    params={ this.props.params }
+                                                    location={ this.props.location }>
+                                                <span params={ this.props.params } location={ this.props.location }>Default</span>
+                                            </Button><span params={ this.props.params } location={ this.props.location }>16: Redesign Icon</span>
+                                        </ListGroupItem>
+                                    </ListGroup>
+                                </Panel>
+                            </Panel>
+                            </Col>
+                        </Row>
+                    </Grid>
                 </ListGroup>
             </div>
             );

@@ -2,36 +2,32 @@ import React, { Component } from 'react';
 import { Panel} from 'react-bootstrap';
 import { ListGroup,ListGroupItem,Button} from 'react-bootstrap';
 
-export default class DynamicListItem extends React.Component {
-  makeListGroupItems(item){
-    let listGroupItems;
-      if (item.tasks && item.tasks.length > 0)
-       listGroupItems = item.tasks.map((task,i) => {
+export default class DynamicListTasks extends React.Component {
+  render() {
+    let tasks =this.props.tasks;
+
+    let listGroupItems = "not null";
+      if (tasks && tasks.length > 0)
+       listGroupItems = tasks.map((task,i) => {
+         let link = item.link+"/"+task.id;
+         let key = task.id? task.id:i;
           return (
-            <ListGroupItem  style={{"minHeight":"50px"}}  key={task.id? task.id:i}>
-              <span> {task.id? task.id:i}: {task.name} </span>
-              <Button href={task.link} bsStyle= "success" style={{"cssFloat":"right"}}> contribute </Button>
+            <ListGroupItem  style={{"minHeight":"50px"}}  key={key}>
+              <span> {key}: {task.name} </span>
+              <Button href={link} bsStyle= "success" style={{"cssFloat":"right"}}> contribute </Button>
             </ListGroupItem>
           );
         })
+        else {
+            listGroupItems = (<Panel header="No tasks!"
+                             eventKey={1}>
+                          <p>
+                              <span>Neat, but <i>tasks</i> is empty.</span>
+                          </p>
+                      </Panel>
+            );
+        }
         return listGroupItems;
-  }
-
-  render() {
-    let item = this.props.item;
-    let i = this.props.key;
-
-    return (
-      <Panel bsStyle="warning" header= {item.title} key={item.id? item.id:i} style={{"fontSize":"25px", "fontFamily":"awesome"}}>
-        <dev style={{"fontSize":"18px", "fontFamily":"Helvetica"}}>
-          <span> {item.content.description} </span>
-        <Panel collapsible defaultExpanded bsStyle="success" header= {item.content.numberOfTasks}>
-            <ListGroup fill style={{"fontSize":"15px"}}>
-              {this.makeListGroupItems(item)}
-            </ListGroup>
-          </Panel>
-        </dev>
-      </Panel>
 );
   }
 }

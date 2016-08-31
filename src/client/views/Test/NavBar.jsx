@@ -15,16 +15,13 @@ const NavBar = () => (
         <Navbar.Collapse>
             <Nav pullCenter>
                 <NavItem href="/contributor" bsStyle="success" >
-                    Contributer
+                    Contributor
                 </NavItem>
                 <NavItem href="/mentor" bsStyle="warning">
                     Mentor
                 </NavItem>
-                <NavItem href="/projects">
-                    Projects
-                </NavItem>
                 <NavItem href="/about">
-                    about
+                    About
                 </NavItem>
 
             </Nav>
@@ -34,13 +31,10 @@ const NavBar = () => (
               <NavItem href="/auth/github">
                   Login
               </NavItem>
-                <NavDropdown title="profile"
+                <NavDropdown title="Profile"
                              id="basic-nav-dropdown">
                     <MenuItem href="/yourtasks">
                         Your Tasks
-                    </MenuItem>
-                    <MenuItem href="/yourproject">
-                        Your Project
                     </MenuItem>
 
                     <MenuItem divider />
